@@ -4,12 +4,12 @@
   Reads today's sunrise and sunset times as well as actual time and sends a "day" command to a LED lamp if
   the actual time is between sunrise and sunset. Otherwise it sends a night command. These commands change the color
   temperature of the lamp to adjust for change of color temperature of the sun
-Please include your coordinates to get the right times for sunset and sunrise. No adjustment to timezones needed.
+  Please include your coordinates to get the right times for sunset and sunrise. No adjustment to timezones needed.
 
-Based on ArduinoJson and SNTPtime library as well as the IRremoteESP8266 library.
-https://github.com/markszabo/IRremoteESP8266
-https://github.com/SensorsIot/SNTPtime
-https://github.com/bblanchon/ArduinoJson
+  Based on ArduinoJson and SNTPtime library as well as the IRremoteESP8266 library.
+  https://github.com/markszabo/IRremoteESP8266
+  https://github.com/SensorsIot/SNTPtime
+  https://github.com/bblanchon/ArduinoJson
 
   Copyright <2018> <Andreas Spiess>
 
@@ -185,7 +185,8 @@ void setup()
     }
   }
   Serial.println("Going into deep sleep");
-  ESP.deepSleep(SLEEPTIME); 
+  ESP.deepSleep(SLEEPTIME);
+}
 
 void loop() {
   yield();
